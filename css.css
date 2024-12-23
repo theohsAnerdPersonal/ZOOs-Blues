@@ -1,0 +1,279 @@
+#love-notes {
+    background-color: #4C6444; /* Light green shade */
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#love-note-container {
+    background: #fff;
+    border: 4px solid #ffcccc;
+    border-radius: 25px;
+    padding: 20px;
+    width: 80%;
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#love-note-container:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 10px;
+    background: #ff9999;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+#our-playlists {
+    font-family: 'Arial', sans-serif;
+    background-color: #CABA9C; /* Khaki */
+    color: #4D2D18; /* Cafe noir for text */
+    padding: 20px;
+    text-decoration: none;
+}
+
+#our-playlists h2 {
+    text-align: center;
+    color: #102820; /* Dark green */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#our-playlists p {
+    text-align: center;
+    color: #4D2D18; /* Cafe noir */
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+#our-playlists h3 {
+    color: #4C6444; /* Hunter green */
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+#our-playlists button {
+    width: auto;
+    padding: 15px;
+    font-size: 1.1em;
+    text-decoration: none;
+    background-color: #4C6444; /* Hunter green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#our-playlists button:hover {
+    background-color: #102820; /* Dark green */
+    transform: scale(1.05);
+}
+
+.shuffle-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff4081; /* Raw umber */
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shuffle-button:hover {
+    background-color: #4D2D18; /* Cafe noir */
+}
+
+
+
+#games-activities {
+    background-color: #8A6240; /* Khaki background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: white; /* Cafe noir for text */
+}
+
+#love-jar-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #8A6240; /* Soft pink background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #4D2D18; /* Cafe noir for text */
+}
+
+
+#love-quiz {
+    text-align: center;
+    padding: 40px;
+    background-color: #CABA9C; /* Khaki background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #4D2D18; /* Cafe noir for text */
+}
+
+
+
+
+@media (max-width: 768px) {
+    #mobile-gallery {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mobile-gallery .circle {
+        position: absolute;
+        width: 80px; /* Adjust size for mobile */
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        animation: move 10s infinite ease-in-out;
+    }
+
+    #mobile-gallery .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(50vw, 20vh);
+        }
+        50% {
+            transform: translate(-50vw, -20vh);
+        }
+        75% {
+            transform: translate(20vw, -50vh);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}
+
+
+
+#play-me-section {
+    background-color: #8A6240; /* Khaki */
+    color: white; /* Cafe noir */
+    width: 100%;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#play-me-section h2 {
+    color: #102820; /* Dark green */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#play-me-section p {
+    font-size: 1.2em;
+    color: #4C6444; /* Hunter green */
+    margin-bottom: 20px;
+}
+
+.play-me-video {
+    width: 100px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+#reminds-me-of-you-section {
+    font-family: 'Arial', sans-serif;
+    background-color: #CABA9C; /* Khaki */
+    color: #4D2D18; /* Cafe noir */
+    text-align: center;
+}
+
+#reminds-me-of-you-section h2 {
+    color: #102820; /* Dark green */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#reminds-me-of-you-section p {
+    color: #4D2D18; /* Cafe noir */
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.custom-audio-player {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF7E6; /* Light beige */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.audio-btn {
+    padding: 15px;
+    background-color: #4C6444; /* Hunter green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.audio-btn:hover {
+    background-color: #6B8E68; /* Softer green */
+    transform: scale(1.05);
+}
+
+#progress-container {
+    flex: 1;
+    height: 10px;
+    background-color: #DDD;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4C6444; /* Hunter green */
+    transition: width 0.2s;
+}
+
+#time-elapsed, #duration {
+    font-size: 1.1em;
+    color: #4D2D18; /* Cafe noir */
+}
