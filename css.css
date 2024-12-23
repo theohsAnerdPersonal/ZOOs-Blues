@@ -123,54 +123,6 @@
 
 
 
-
-@media (max-width: 768px) {
-    #mobile-gallery {
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #mobile-gallery .circle {
-        position: absolute;
-        width: 80px; /* Adjust size for mobile */
-        height: 80px;
-        border-radius: 50%;
-        overflow: hidden;
-        animation: move 10s infinite ease-in-out;
-    }
-
-    #mobile-gallery .circle img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    @keyframes move {
-        0% {
-            transform: translate(0, 0);
-        }
-        25% {
-            transform: translate(50vw, 20vh);
-        }
-        50% {
-            transform: translate(-50vw, -20vh);
-        }
-        75% {
-            transform: translate(20vw, -50vh);
-        }
-        100% {
-            transform: translate(0, 0);
-        }
-    }
-}
-
-
-
 #play-me-section {
     background-color: #8A6240; /* Khaki */
     color: white; /* Cafe noir */
@@ -276,4 +228,39 @@
 #time-elapsed, #duration {
     font-size: 1.1em;
     color: #4D2D18; /* Cafe noir */
+}
+
+
+
+
+/* Mobile view */
+@media only screen and (max-width: 768px) {
+    #gallery {
+        padding: 10px;
+    }
+
+    #gallery h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusts number of columns */
+        gap: 10px;
+        justify-items: center; /* Centers images horizontally */
+    }
+
+    .gallery img {
+        width: 100%;  /* Ensures the image fits the column */
+        height: auto; /* Maintains aspect ratio */
+        border-radius: 8px; /* Optional: rounded corners */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+        transition: transform 0.3s ease; /* Smooth transition on hover */
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05); /* Slight zoom effect on hover */
+    }
 }
